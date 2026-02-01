@@ -1,0 +1,24 @@
+{
+  "name": "graphql",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/franciole/graphql#readme",
+  "bugs": {
+    "url": "https://github.com/franciole/graphql/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franciole/graphql.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "apollo-server": "^3.13.0",
+    "graphql": "^16.12.0"
+  }
+}
