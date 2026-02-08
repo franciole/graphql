@@ -16,12 +16,15 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon -r sucrase/register src/index.js"
+    "dev": "nodemon -r sucrase/register src/index.js",
+    "server": "json-server --watch db.json --port 3000"
   },
   "dependencies": {
     "@apollo/sandbox": "^2.7.4",
     "apollo-server": "^3.13.0",
     "graphql": "^16.12.0",
+    "json-server": "^1.0.0-beta.5",
+    "node-fetch": "^3.3.2",
     "the": "^1.0.2"
   },
   "devDependencies": {
