@@ -1,0 +1,30 @@
+  query GET_POSTS {
+	posts (input: {
+		_sort: "indexRef"
+		_order: "desc"
+		_start: 0
+		_limit: 1
+	}){
+    id
+    title
+    body
+    indexRef
+    createdAt
+  }
+}
+
+query GET_USERS {
+  users(input:  {
+     _sort: "indexRef"
+     _order: "desc"
+     _start: 0
+     _limit: 1
+  }) {
+    id
+    firstName
+    lastName
+    userName
+    indexRef
+    createdAt
+  }
+}
