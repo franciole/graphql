@@ -50,3 +50,28 @@ query GET_USERS(
     createdAt
   }
 }
+
+
+query GET_POST {
+  post (id: 8600) {
+    __typename
+
+   ... on Post {
+    id
+    title
+   }
+
+   ... on PostError {
+    statusCode
+    message
+
+    ... on PostNotFoundError{
+      postId
+    }
+
+    ... on PostTimeoutError {
+      timeout
+    }
+   }
+  }
+}
