@@ -1,4 +1,4 @@
-import { RESTDataSource } from 'apollo-datasource-rest';
+﻿import { RESTDataSource } from 'apollo-datasource-rest';
 import { makeUserDataLoader } from './dataloaders';
 
 export class UsersApi extends RESTDataSource {

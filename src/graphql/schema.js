@@ -19,4 +19,4 @@ const rootResolvers = {
 };
 
 export const typeDefs = [rootTypeDefs, userTypeDefs, postTypeDefs, apiFiltersTypeDefs];
-export const resolvers = [rootResolvers, userResolvers, postResolvers, apiFiltersResolvers];
+export const resolvers = [rootResolvers, userResolvers, postResolvers, apiFiltersResolvers, ];
