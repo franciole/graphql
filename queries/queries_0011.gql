@@ -1,0 +1,44 @@
+query GET_POST {
+  post(id: "860") {
+    __typename
+
+    ... on Post {
+      id
+      title
+    }
+
+    ... on PostNotFoundError {
+      statusCode
+      message
+    }
+  }
+}
+
+query GET_POSTS {
+	posts(input:{
+    _sort: "indesRef",
+    _order: DESC
+    _start: 0
+    _limit: 100
+  }) {
+    id
+    user {
+      id
+    }
+  }
+}
+
+# Write your ququery GET_POSTS {
+query GET_POSTS {
+	post(id: "783"){
+    id
+    title
+    user {
+      id
+      firstName
+      userName
+      indexRef
+      createdAt
+    }
+  }
+}
